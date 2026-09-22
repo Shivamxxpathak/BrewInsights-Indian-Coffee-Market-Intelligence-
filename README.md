@@ -19,137 +19,87 @@
 
 BrewInsights is an end-to-end analytics project built to understand **coffee consumer behaviour in India** from survey data.
 
-The project takes the analysis from:
-
-**Raw Survey Data → Data Cleaning → EDA → Consumer Segmentation → Predictive Modeling → Demand Analysis → City Intelligence → Interactive Dashboard**
-
-It combines analytical notebooks, reusable datasets, generated outputs, and a Streamlit dashboard into one portfolio-ready workflow.
-
----
-
-## 🎯 Project Focus
-
-| Area | What BrewInsights explores |
-|---|---|
-| ☕ Consumer Behaviour | Consumption habits, preferences and purchase behaviour |
-| 💰 Spending | Coffee spending patterns and price sensitivity |
-| 🧩 Segmentation | Behavioural customer groups using clustering |
-| 🤖 Machine Learning | Predictive modelling and model comparison |
-| 📈 Demand Intelligence | Period-level demand patterns and forecasting outputs |
-| 🏙️ City Intelligence | City opportunity and market-entry analysis |
-| 📊 Dashboard | Interactive presentation of analytical outputs |
-
----
-
-## 🧭 Project Map
-
-```text
-                     ┌─────────────────────┐
-                     │   Survey Responses  │
-                     └──────────┬──────────┘
-                                ↓
-                    ┌───────────────────────┐
-                    │ Cleaning & Preparation│
-                    └──────────┬────────────┘
-                               ↓
-                     ┌────────────────────┐
-                     │       EDA          │
-                     └─────────┬──────────┘
-                               ↓
-               ┌───────────────┴───────────────┐
-               ↓                               ↓
-      ┌─────────────────┐             ┌─────────────────┐
-      │  Segmentation   │             │ Predictive ML   │
-      └────────┬────────┘             └────────┬────────┘
-               ↓                               ↓
-      ┌─────────────────┐             ┌─────────────────┐
-      │ Consumer Profiles│             │ Demand Analysis │
-      └────────┬────────┘             └────────┬────────┘
-               └──────────────┬────────────────┘
-                              ↓
-                   ┌─────────────────────┐
-                   │ City / Market Intel │
-                   └──────────┬──────────┘
-                              ↓
-                   ┌─────────────────────┐
-                   │ BrewInsights Dashboard│
-                   └─────────────────────┘
-```
+**Raw Survey → Cleaning → EDA → Segmentation → Predictive Modeling → Demand Analysis → City Intelligence → Dashboard**
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-.
-├── BrewInsights_Analysis.ipynb
-├── app.py
-├── run_dashboard.py
-├── dashboard/run_dashboard.bat
-├── dashboard/START_DASHBOARD.cmd
-│
-├── data/
-│   ├── raw_survey.csv
-│   ├── indian-coffee-survey.csv
-│   ├── coffee_cleaned.csv
-│   ├── external_city_data.csv
-│   └── ...
-│
-├── outputs/
-│   ├── consumer_cluster_assignments.csv
-│   ├── consumer_cluster_profiles.csv
-│   ├── city_opportunity_scores.csv
-│   ├── market_entry_ranking.csv
-│   ├── recommendation_sensitivity.csv
-│   └── ...
-│
-├── assets/
-│   ├── consumer_segments.png
-│   └── city_market_entry_score.png
-│
-├── docs/
-│   └── PROJECT_COMPLETION_NOTES.md
-│
-├── scripts/
-│   └── missing_parts_added.py
-│
-├── requirements.txt
-├── requirements_dashboard.txt
+BrewInsights-Indian-Coffee-Market-Intelligence/
+├── README.md
 ├── LICENSE
-└── README.md
+├── .gitignore
+├── requirements.txt
+├── notebooks/
+│   └── BrewInsights_Analysis.ipynb
+├── dashboard/
+│   ├── app.py
+│   ├── README.md
+│   ├── requirements_dashboard.txt
+│   ├── run_dashboard.py
+│   ├── run_dashboard.bat
+│   └── START_DASHBOARD.cmd
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   ├── external_city_data.csv
+│   ├── coffee_demand_by_period.csv
+│   ├── coffee_demand_forecast.csv
+│   ├── coffee_demand_model_comparison.csv
+│   └── outputs/
+├── outputs/
+│   └── datasets/
+│       ├── consumer_cluster_assignments.csv
+│       ├── consumer_cluster_profiles.csv
+│       ├── city_cluster_assignments.csv
+│       ├── city_cluster_profiles.csv
+│       ├── city_clustering_metrics.csv
+│       ├── city_opportunity_scores.csv
+│       ├── market_entry_ranking.csv
+│       ├── adoption_model_comparison.csv
+│       ├── spending_model_comparison.csv
+│       ├── recommendation_sensitivity.csv
+│       └── partnership_experiment_template.csv
+├── assets/
+│   └── figures/
+├── src/
+│   ├── data_cleaning.py
+│   ├── segmentation.py
+│   ├── adoption_prediction.py
+│   ├── spending_prediction.py
+│   ├── demand_forecasting.py
+│   └── market_entry.py
+├── docs/
+│   ├── DATA_DICTIONARY.md
+│   ├── METHODOLOGY.md
+│   ├── MODEL_EVALUATION.md
+│   └── PROJECT_COMPLETION_NOTES.md
+└── scripts/
+    ├── missing_parts_added.py
+    ├── anonymize_public_data.py
+    └── run_pipeline.py
 ```
-
-> The current GitHub branch contains the project's analysis notebook, dashboard app, datasets, analytical outputs, visual assets, documentation and launch helpers.
 
 ---
 
 ## ⚙️ Run the Analysis
 
-### 1. Create an environment
-
 ```bash
 python -m venv .venv
 ```
 
-### 2. Activate it
+Windows:
 
-**Windows**
 ```bash
 .venv\Scripts\activate
 ```
 
-**macOS / Linux**
-```bash
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
+Install:
 
 ```bash
 pip install -r requirements.txt
 ```
-
-### 4. Open the analysis notebook
 
 Open:
 
@@ -161,106 +111,79 @@ notebooks/BrewInsights_Analysis.ipynb
 
 ## 🖥️ Launch the Dashboard
 
-Install dashboard dependencies:
-
 ```bash
 pip install -r dashboard/requirements_dashboard.txt
-```
-
-### Windows
-
-Double-click:
-
-```text
-START_DASHBOARD.cmd
-```
-
-or:
-
-```text
-run_dashboard.bat
-```
-
-### Terminal
-
-```bash
 streamlit run dashboard/app.py
 ```
 
-The dashboard must be launched with Streamlit; do not execute `dashboard/app.py` directly.
+On Windows, use `dashboard/START_DASHBOARD.cmd` or `dashboard/run_dashboard.bat`.
+
+Do not run `dashboard/app.py` directly with Python. The dashboard must be launched through Streamlit.
 
 ---
 
-## 📊 Key Outputs
+## 📊 Analytical Components
 
-### Consumer Segmentation
+### EDA
+Consumer demographics, coffee frequency, coffee type, brands, spending, purchasing behaviour, price sensitivity, taste, loyalty and purchase intention.
+
+### Customer Segmentation
+K-Means and hierarchical/agglomerative clustering with silhouette evaluation.
+
+### New Coffee Brand Adoption
+Logistic Regression, Decision Tree, Random Forest, XGBoost and Gradient Boosting.
+
+### Coffee Spending Prediction
+Linear Regression with MAE, RMSE and R² evaluation.
+
+### Demand Forecasting
+24 ordered survey periods, three regression models, six future periods and explicit documentation of the time-series limitation.
+
+### City Intelligence
+City-level feature engineering, K-Means clustering, market-type classification, silhouette evaluation and opportunity scoring.
+
+### Market Entry
+Consumer profiles, city opportunity, market-entry ranking, sensitivity analysis and a partnership experiment template.
+
+---
+
+## 📈 Key Visuals
 
 ![Consumer Segments](assets/figures/consumer_segments.png)
 
-The repository includes cluster assignments and cluster profiles generated from the project's segmentation workflow.
-
-### City Market Intelligence
-
 ![City Market Entry Score](assets/figures/city_market_entry_score.png)
 
-City opportunity and market-entry outputs are provided as CSV files for reproducibility and dashboard use.
+Additional analytical figures:
+
+- [Adoption model comparison](assets/figures/adoption_model_comparison.svg)
+- [Demand forecast](assets/figures/demand_forecast.svg)
+- [City opportunity](assets/figures/city_market_opportunity.svg)
+- [Model evaluation summary](assets/figures/model_evaluation_summary.svg)
 
 ---
 
-## 🧪 Analytical Components
+## 📚 Documentation
 
-### Exploratory Data Analysis
-The notebook explores demographic, consumption, preference, spending and purchasing variables from the survey data.
-
-### Customer Segmentation
-Clustering outputs are used to identify groups of consumers with different behavioural characteristics.
-
-### Predictive Modeling
-The project includes model-comparison outputs and prediction-related datasets used in the analytical workflow.
-
-### Demand Analysis
-The repository contains:
-- demand by period
-- forecast output
-- model comparison results
-
-### Market Entry Intelligence
-Supporting city data is combined with generated opportunity scores and market-entry outputs.
+- [Data Dictionary](docs/DATA_DICTIONARY.md)
+- [Methodology](docs/METHODOLOGY.md)
+- [Model Evaluation](docs/MODEL_EVALUATION.md)
+- [Dashboard Guide](dashboard/README.md)
 
 ---
 
-## 🗂️ Data Lineage
+## ⚠️ Important Analytical Limitation
 
-```text
-Raw Survey
-   ↓
-Cleaning / Preprocessing
-   ↓
-Cleaned Analytical Dataset
-   ↓
-EDA / Feature Engineering
-   ↓
-Model & Segmentation Outputs
-   ↓
-Dashboard
-```
+The survey does **not** contain genuine historical monthly sales data. The demand forecast therefore uses an ordered survey-derived demand series. The notebook explicitly treats this as a demonstration rather than an actual monthly Indian coffee sales forecast.
 
-The repository keeps the project's source and derived datasets distinguishable so the analytical workflow can be traced from input to output.
+The repository preserves the executed model results, including negative R² values for the demand models, instead of silently replacing them.
 
 ---
 
-## 🧰 Tech Stack
+## 🔐 Data Privacy
 
-**Python · Pandas · NumPy · Matplotlib · Seaborn · Scikit-learn · Plotly · Streamlit · Jupyter Notebook · Git/GitHub**
+The source survey contains respondent identifiers and a small number of email records. Those direct identifiers should not be redistributed publicly.
 
----
-
-## 📌 Important Notes
-
-- The repository preserves the project's existing analytical outputs.
-- Model results are documented as generated by the project rather than being silently replaced.
-- Raw and processed datasets are retained separately where available.
-- The dashboard should be launched with **Streamlit**.
+Use `scripts/anonymize_public_data.py` to create a public-safe copy before publishing respondent-level data.
 
 ---
 
