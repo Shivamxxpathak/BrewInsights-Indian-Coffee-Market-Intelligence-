@@ -1,12 +1,16 @@
 COFFEE MARKET DASHBOARD - QUICK START
 
-1. Extract the ZIP completely.
+1. Extract the project completely.
 2. Open the extracted project folder.
-3. Double-click START_DASHBOARD.cmd (or run_dashboard.bat).
-4. The launcher starts Streamlit correctly and opens the dashboard in your browser.
+3. Open the dashboard folder.
+4. Double-click START_DASHBOARD.cmd (or run_dashboard.bat).
+5. The launcher starts Streamlit and opens the dashboard in your browser.
+
+From the project root, you can also run:
+    streamlit run dashboard\app.py
 
 IMPORTANT:
-Do NOT double-click dashboard\app.py and do NOT run it with:
+Do NOT run:
     python dashboard\app.py
 
 The dashboard must be launched through Streamlit.
