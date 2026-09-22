@@ -19,7 +19,7 @@ def _city_base(df):
     }.items():
         if c in d: d[c]=d[c].map(m)
     d["priceSensitivity"]=d.get("priceSensitivity",pd.Series(index=d.index)).map({"High":2,"Low":0,"Medium":1,"Neutral":3,"Somewhat Sensitive":4,"Very Sensitive":5,"Not Very Sensitive":6})
-    city=d.groupby("city")[["monthlyCoffeeSpend","priceSensitivity"]].mean().reset_index()
+    city=d.groupby("city").agg(monthlyCoffeeSpend=("monthlyCoffeeSpend","mean"),income=("monthlyIncome","mean"),young_share=("young_age","mean"),adoption_signal=("willingnessToTry","mean"),purchase_intention=("purchaseIntention","mean"),priceSensitivity=("priceSensitivity","mean")).reset_index()
     brand_map={"Nescafe":"Mass/Instant","Bru":"Mass/Instant","Davidoff":"Mass/Instant","Blue Tokai":"Premium","Sleepy Owl":"Premium","Third Wave Coffee":"Premium","Rage Coffee":"Premium","Starbucks":"Café Chain","Café Coffee Day":"Café Chain","Tim Hortons":"Café Chain","Country Bean":"Café Chain","Local / Regional Brand":"Local/Regional","Tata Coffee":"Local/Regional","Other":"Other"}
     d["preferred_brand_grouped"]=d["preferredBrand"].astype("string").str.strip().replace(brand_map)
     d["Premium_brand"]=d["preferred_brand_grouped"].isin(["Premium","Café Chain"]).astype(int)
