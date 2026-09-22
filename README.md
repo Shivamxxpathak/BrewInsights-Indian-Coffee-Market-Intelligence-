@@ -41,7 +41,8 @@ BrewInsights-Indian-Coffee-Market-Intelligence/
 │   ├── run_dashboard.bat
 │   └── START_DASHBOARD.cmd
 ├── data/
-│   ├── raw/
+│   ├── README.md
+│   ├── raw/ (source export withheld from public repo)
 │   ├── processed/
 │   ├── external_city_data.csv
 │   ├── coffee_demand_by_period.csv
@@ -202,9 +203,9 @@ The public repository now separates source data, processed data, analytical outp
 
 ## 🔐 Data Privacy
 
-The source survey contains respondent identifiers and a small number of email records. Those direct identifiers should not be redistributed publicly.
+The original respondent-level raw survey is withheld from the public repository because the source export can contain direct identifiers. The dashboard uses the cleaned `data/processed/coffee_cleaned.csv` dataset.
 
-Use `scripts/anonymize_public_data.py` to create a public-safe copy before publishing respondent-level data.
+Use `scripts/anonymize_public_data.py` to create a public-safe copy before publishing any respondent-level survey data.
 
 ---
 
