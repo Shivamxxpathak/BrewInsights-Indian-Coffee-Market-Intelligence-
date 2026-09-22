@@ -1,0 +1,23 @@
+city,monthlyCoffeeSpend,priceSensitivity,Premium_brand,bought_online,Premium_type,city_tier,cafe_density,income_index,competitor_count,ecommerce_pct,cluster,market_type,opportunity_score
+Ahmedabad,580.584,1.11,0.372,0.144,0.0,1,83.697,76625.764,30.189,68.41,0,Premium coffee markets,0.763
+Bengaluru,560.656,1.082,0.373,0.156,0.0,1,84.045,99782.54,15.515,84.398,0,Premium coffee markets,0.803
+Bhopal,555.819,1.151,0.385,0.14,0.0,2,28.428,58567.402,4.268,56.044,2,Mass/instant-oriented markets,0.359
+Bhubaneswar,533.345,1.149,0.375,0.215,0.0,2,20.166,65386.536,9.362,54.58,2,Mass/instant-oriented markets,0.282
+Chandigarh,547.751,1.034,0.392,0.138,0.0,2,22.655,49899.572,3.407,46.507,2,Mass/instant-oriented markets,0.271
+Chennai,573.66,1.075,0.363,0.184,0.0,1,93.298,82431.869,19.546,68.668,0,Premium coffee markets,0.811
+Coimbatore,556.758,1.145,0.377,0.137,0.0,2,48.185,67370.684,8.381,58.437,2,Mass/instant-oriented markets,0.489
+Delhi,599.541,1.187,0.381,0.14,0.0,1,74.982,108275.001,33.3,76.973,0,Premium coffee markets,0.917
+Hyderabad,585.595,1.114,0.386,0.154,0.0,1,84.474,79882.285,22.304,72.327,0,Premium coffee markets,0.796
+Indore,531.924,1.048,0.443,0.152,0.0,2,27.763,61563.057,5.805,50.401,2,Mass/instant-oriented markets,0.296
+Jaipur,554.432,1.093,0.404,0.168,0.0,2,21.952,68722.138,11.691,56.168,2,Mass/instant-oriented markets,0.368
+Kanpur,490.0,4.0,0.0,0.0,0.0,3,20.46,30397.05,2.09,37.01,1,Emerging coffee markets,0.001
+Kochi,561.237,1.108,0.41,0.165,0.0,2,31.66,51783.726,10.459,47.135,2,Mass/instant-oriented markets,0.361
+Kolkata,554.664,1.022,0.343,0.153,0.0,1,72.17,93366.475,25.799,70.825,0,Premium coffee markets,0.703
+Lucknow,582.311,1.145,0.347,0.145,0.0,2,29.138,47441.803,9.158,48.803,2,Mass/instant-oriented markets,0.395
+Mumbai,558.989,1.063,0.397,0.125,0.0,1,66.241,80459.808,16.452,82.324,0,Premium coffee markets,0.634
+Nagpur,568.663,1.075,0.414,0.167,0.0,2,36.401,49621.361,11.726,55.503,2,Mass/instant-oriented markets,0.396
+Patna,559.557,1.101,0.396,0.146,0.0,2,22.237,69672.173,9.95,43.974,2,Mass/instant-oriented markets,0.389
+Pune,571.187,1.106,0.358,0.149,0.0,1,78.243,102481.159,19.992,75.285,0,Premium coffee markets,0.82
+Ranchi,490.0,3.0,0.0,0.0,0.0,3,21.63,37692.93,2.0,23.44,1,Emerging coffee markets,0.038
+Surat,563.077,1.138,0.438,0.178,0.0,2,23.661,57379.423,3.309,58.186,2,Mass/instant-oriented markets,0.354
+Visakhapatnam,560.245,1.069,0.363,0.155,0.0,2,43.138,46851.116,6.226,42.317,2,Mass/instant-oriented markets,0.389
