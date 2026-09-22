@@ -10,6 +10,7 @@
 [![Scikit--learn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Quality Check](https://github.com/Shivamxxpathak/BrewInsights-Indian-Coffee-Market-Intelligence-/actions/workflows/quality.yml/badge.svg)](https://github.com/Shivamxxpathak/BrewInsights-Indian-Coffee-Market-Intelligence-/actions/workflows/quality.yml)
 
 </div>
 
@@ -175,11 +176,11 @@ Additional analytical figures:
 - [Data Dictionary](docs/DATA_DICTIONARY.md)
 - [Methodology](docs/METHODOLOGY.md)
 - [Model Evaluation](docs/MODEL_EVALUATION.md)
-- [Dashboard Guide](dashboard/README.md)
+- [Dashboard Guide](dashboard/README.md)\n- [Reproducibility & Verification](docs/REPRODUCIBILITY.md)\n- [PPT / Documentation Alignment](docs/PPT_ALIGNMENT.md)
 
 ---
 
-## ⚠️ Important Analytical Limitation
+## 🧪 Quality & Verification\n\nThe repository includes automated tests and a GitHub Actions quality workflow covering required files, processed-data schema, privacy checks, non-empty analytical outputs, Python syntax compilation, dependency consistency, package imports and a Streamlit runtime smoke test.\n\nThe original executed notebook remains preserved as the analytical source of truth; the repository QA layer validates the published artifacts without silently replacing the saved model results.\n\n## ⚠️ Important Analytical Limitation
 
 The survey does **not** contain genuine historical monthly sales data. The demand forecast therefore uses an ordered survey-derived demand series. The notebook explicitly treats this as a demonstration rather than an actual monthly Indian coffee sales forecast.
 
