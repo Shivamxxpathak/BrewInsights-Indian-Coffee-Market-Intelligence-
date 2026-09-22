@@ -1,0 +1,23 @@
+city,cluster,market_type,monthlyCoffeeSpend,cafe_density,income_index,opportunity_score
+Ahmedabad,0,Premium coffee markets,580.584,83.697,76625.764,0.763
+Bengaluru,0,Premium coffee markets,560.656,84.045,99782.540,0.803
+Bhopal,2,Mass/instant-oriented markets,555.819,28.428,58567.402,0.359
+Bhubaneswar,2,Mass/instant-oriented markets,533.345,20.166,65386.536,0.282
+Chandigarh,2,Mass/instant-oriented markets,547.751,22.655,49899.572,0.271
+Chennai,0,Premium coffee markets,573.660,93.298,82431.869,0.811
+Coimbatore,2,Mass/instant-oriented markets,556.758,48.185,67370.684,0.489
+Delhi,0,Premium coffee markets,599.541,74.982,108275.001,0.917
+Hyderabad,0,Premium coffee markets,585.595,84.474,79882.285,0.796
+Indore,2,Mass/instant-oriented markets,531.924,27.763,61563.057,0.296
+Jaipur,2,Mass/instant-oriented markets,554.432,21.952,68722.138,0.368
+Kanpur,1,Emerging coffee markets,490.000,20.460,30397.050,0.001
+Kochi,2,Mass/instant-oriented markets,561.237,31.660,51783.726,0.361
+Kolkata,0,Premium coffee markets,554.664,72.170,93366.475,0.703
+Lucknow,2,Mass/instant-oriented markets,582.311,29.138,47441.803,0.395
+Mumbai,0,Premium coffee markets,558.989,66.241,80459.808,0.634
+Nagpur,2,Mass/instant-oriented markets,568.663,36.401,49621.361,0.396
+Patna,2,Mass/instant-oriented markets,559.557,22.237,69672.173,0.389
+Pune,0,Premium coffee markets,571.187,78.243,102481.159,0.820
+Ranchi,1,Emerging coffee markets,490.000,21.630,37692.930,0.038
+Surat,2,Mass/instant-oriented markets,563.077,23.661,57379.423,0.354
+Visakhapatnam,2,Mass/instant-oriented markets,560.245,43.138,46851.116,0.389
