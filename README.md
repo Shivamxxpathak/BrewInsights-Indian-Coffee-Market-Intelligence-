@@ -46,12 +46,12 @@ BrewInsights-Indian-Coffee-Market-Intelligence/
 │   ├── external_city_data.csv
 │   ├── coffee_demand_by_period.csv
 │   ├── coffee_demand_forecast.csv
-│   ├── coffee_demand_model_comparison.csv
-│   └── outputs/
+│   └── coffee_demand_model_comparison.csv
 ├── outputs/
 │   └── datasets/
 │       ├── consumer_cluster_assignments.csv
 │       ├── consumer_cluster_profiles.csv
+│       ├── city_scores.csv
 │       ├── city_cluster_assignments.csv
 │       ├── city_cluster_profiles.csv
 │       ├── city_clustering_metrics.csv
@@ -151,11 +151,18 @@ Consumer profiles, city opportunity, market-entry ranking, sensitivity analysis 
 
 ![Consumer Segments](assets/figures/consumer_segments.png)
 
+### Customer Clustering — 3D View
+
+![Customer Clusters 3D](assets/figures/customer_clusters_3d.svg)
+
+### City Market Entry Score
+
 ![City Market Entry Score](assets/figures/city_market_entry_score.png)
 
 Additional analytical figures:
 
 - [Adoption model comparison](assets/figures/adoption_model_comparison.svg)
+- [Customer clusters — 3D](assets/figures/customer_clusters_3d.svg)
 - [Demand forecast](assets/figures/demand_forecast.svg)
 - [City opportunity](assets/figures/city_market_opportunity.svg)
 - [Model evaluation summary](assets/figures/model_evaluation_summary.svg)
@@ -176,6 +183,20 @@ Additional analytical figures:
 The survey does **not** contain genuine historical monthly sales data. The demand forecast therefore uses an ordered survey-derived demand series. The notebook explicitly treats this as a demonstration rather than an actual monthly Indian coffee sales forecast.
 
 The repository preserves the executed model results, including negative R² values for the demand models, instead of silently replacing them.
+
+## 🧹 Repository Quality Review
+
+The repository was reviewed after the dashboard and visualization additions. Cleanup included:
+
+- removed duplicate raw survey copies
+- removed duplicate processed dataset copies
+- consolidated the derived `city_scores.csv` under `outputs/datasets/`
+- fixed the Windows dashboard launcher paths
+- fixed the Python dashboard launcher path
+- fixed the dashboard's survey-data path to the canonical processed dataset
+- retained the executed notebook outputs rather than replacing analytical results
+
+The public repository now separates source data, processed data, analytical outputs, reusable modules, dashboard code, figures and documentation.
 
 ---
 
