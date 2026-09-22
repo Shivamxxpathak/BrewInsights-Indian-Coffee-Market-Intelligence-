@@ -21,6 +21,8 @@ pytest -q
 ## Automated checks
 `.github/workflows/quality.yml` runs on pushes and pull requests to `main`. It installs the declared dependencies on Python 3.11, compiles the source tree, validates required files and schemas, checks public-data identifiers are absent, checks key outputs are non-empty, and performs a Streamlit dependency import smoke test.
 
+The workflow also starts the dashboard in headless mode and verifies that it responds over HTTP before the CI run is considered successful.
+
 ## End-to-end analytical verification
 The original executed notebook remains the analytical source of truth. `scripts/run_pipeline.py` intentionally does not regenerate notebook outputs; it points users to the preserved workflow. This prevents a validation run from silently replacing the executed model results.
 
