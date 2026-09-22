@@ -85,8 +85,8 @@ It combines analytical notebooks, reusable datasets, generated outputs, and a St
 ├── BrewInsights_Analysis.ipynb
 ├── app.py
 ├── run_dashboard.py
-├── run_dashboard.bat
-├── START_DASHBOARD.cmd
+├── dashboard/run_dashboard.bat
+├── dashboard/START_DASHBOARD.cmd
 │
 ├── data/
 │   ├── raw_survey.csv
@@ -154,7 +154,7 @@ pip install -r requirements.txt
 Open:
 
 ```text
-BrewInsights_Analysis.ipynb
+notebooks/BrewInsights_Analysis.ipynb
 ```
 
 ---
@@ -164,7 +164,7 @@ BrewInsights_Analysis.ipynb
 Install dashboard dependencies:
 
 ```bash
-pip install -r requirements_dashboard.txt
+pip install -r dashboard/requirements_dashboard.txt
 ```
 
 ### Windows
@@ -184,10 +184,10 @@ run_dashboard.bat
 ### Terminal
 
 ```bash
-streamlit run app.py
+streamlit run dashboard/app.py
 ```
 
-The included quick-start instructions specifically use the Streamlit launcher rather than executing `app.py` directly.
+The dashboard must be launched with Streamlit; do not execute `dashboard/app.py` directly.
 
 ---
 
@@ -195,13 +195,13 @@ The included quick-start instructions specifically use the Streamlit launcher ra
 
 ### Consumer Segmentation
 
-![Consumer Segments](consumer_segments.png)
+![Consumer Segments](assets/figures/consumer_segments.png)
 
 The repository includes cluster assignments and cluster profiles generated from the project's segmentation workflow.
 
 ### City Market Intelligence
 
-![City Market Entry Score](city_market_entry_score.png)
+![City Market Entry Score](assets/figures/city_market_entry_score.png)
 
 City opportunity and market-entry outputs are provided as CSV files for reproducibility and dashboard use.
 
