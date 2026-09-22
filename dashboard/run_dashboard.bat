@@ -9,13 +9,13 @@ echo       COFFEE MARKET DASHBOARD
 echo ==============================================
 echo.
 
-set "APP=%~dp0dashboard\app.py"
+set "APP=%~dp0app.py"
 set "REQ=%~dp0requirements_dashboard.txt"
 set "PY=%LocalAppData%\Python\pythoncore-3.14-64\python.exe"
 
 if not exist "%APP%" (
     echo [ERROR] dashboard\app.py not found.
-    echo Make sure this BAT file is in the main project folder.
+    echo Make sure dashboard\app.py exists in the dashboard folder.
     echo.
     pause
     exit /b 1
