@@ -1,0 +1,51 @@
+scenario,city,rank,score,w_adoption,w_spending,w_city,w_trend
+Equal,Delhi,1,0.5879174066459454,0.25,0.25,0.25,0.25
+Equal,Hyderabad,2,0.5274109370851101,0.25,0.25,0.25,0.25
+Equal,Pune,3,0.4997467607770837,0.25,0.25,0.25,0.25
+Equal,Ahmedabad,4,0.497603848637803,0.25,0.25,0.25,0.25
+Equal,Bengaluru,5,0.49642759244514073,0.25,0.25,0.25,0.25
+Equal,Chennai,6,0.4818895282427294,0.25,0.25,0.25,0.25
+Equal,Kolkata,7,0.45678572448642357,0.25,0.25,0.25,0.25
+Equal,Mumbai,8,0.45306828094415497,0.25,0.25,0.25,0.25
+Equal,Lucknow,9,0.4090495406627947,0.25,0.25,0.25,0.25
+Equal,Coimbatore,10,0.4018824179912568,0.25,0.25,0.25,0.25
+Adoption focus,Kanpur,1,0.5171835974314946,0.4,0.2,0.2,0.2
+Adoption focus,Delhi,2,0.49955011979347447,0.4,0.2,0.2,0.2
+Adoption focus,Hyderabad,3,0.4469939134581551,0.4,0.2,0.2,0.2
+Adoption focus,Bengaluru,4,0.4222072377461796,0.4,0.2,0.2,0.2
+Adoption focus,Pune,5,0.4171168594298132,0.4,0.2,0.2,0.2
+Adoption focus,Ahmedabad,6,0.41477955608576156,0.4,0.2,0.2,0.2
+Adoption focus,Chennai,7,0.39081316903401414,0.4,0.2,0.2,0.2
+Adoption focus,Kolkata,8,0.38799565201705305,0.4,0.2,0.2,0.2
+Adoption focus,Mumbai,9,0.3823320436173056,0.4,0.2,0.2,0.2
+Adoption focus,Bhopal,10,0.34082956284419874,0.4,0.2,0.2,0.2
+Spending focus,Delhi,1,0.6703339253167564,0.2,0.4,0.2,0.2
+Spending focus,Hyderabad,2,0.5964650199845085,0.2,0.4,0.2,0.2
+Spending focus,Ahmedabad,3,0.5634714766176928,0.2,0.4,0.2,0.2
+Spending focus,Pune,4,0.5480286819420572,0.2,0.4,0.2,0.2
+Spending focus,Chennai,5,0.5382582666493363,0.2,0.4,0.2,0.2
+Spending focus,Bengaluru,6,0.5261457092728681,0.2,0.4,0.2,0.2
+Spending focus,Lucknow,7,0.4957799723699507,0.2,0.4,0.2,0.2
+Spending focus,Mumbai,8,0.4884146369438423,0.2,0.4,0.2,0.2
+Spending focus,Kolkata,9,0.4834908165480816,0.2,0.4,0.2,0.2
+Spending focus,Nagpur,10,0.4487017859739756,0.2,0.4,0.2,0.2
+City focus,Delhi,1,0.6112178511334724,0.2,0.2,0.4,0.2
+City focus,Hyderabad,2,0.5440222602063671,0.2,0.2,0.4,0.2
+City focus,Bengaluru,3,0.5399815437820811,0.2,0.2,0.4,0.2
+City focus,Pune,4,0.5338102880914755,0.2,0.2,0.4,0.2
+City focus,Ahmedabad,5,0.5138474779141934,0.2,0.2,0.4,0.2
+City focus,Chennai,6,0.5127412496700617,0.2,0.2,0.4,0.2
+City focus,Kolkata,7,0.4899940447680989,0.2,0.2,0.4,0.2
+City focus,Mumbai,8,0.4788380134368259,0.2,0.2,0.4,0.2
+City focus,Coimbatore,9,0.4028199916478133,0.2,0.2,0.4,0.2
+City focus,Lucknow,10,0.3726841501852677,0.2,0.2,0.4,0.2
+Trend focus,Delhi,1,0.5705677303400782,0.2,0.2,0.2,0.4
+Trend focus,Hyderabad,2,0.5221625546914102,0.2,0.2,0.2,0.4
+Trend focus,Pune,3,0.5000312136449889,0.2,0.2,0.2,0.4
+Trend focus,Ahmedabad,4,0.49831688393356444,0.2,0.2,0.2,0.4
+Trend focus,Bengaluru,5,0.4973758789794346,0.2,0.2,0.2,0.4
+Trend focus,Chennai,6,0.4857454276175055,0.2,0.2,0.2,0.4
+Trend focus,Kolkata,7,0.4656623846124609,0.2,0.2,0.2,0.4
+Trend focus,Mumbai,8,0.4626884297786459,0.2,0.2,0.2,0.4
+Trend focus,Lucknow,9,0.4274734375535577,0.2,0.2,0.2,0.4
+Trend focus,Coimbatore,10,0.4217397394163274,0.2,0.2,0.2,0.4
