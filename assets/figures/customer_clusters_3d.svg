@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="500" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="#222">Clusters of customers</text>
+<rect x="30" y="55" width="940" height="650" fill="#e9e9f1"/>
+<g stroke="#ffffff" stroke-width="2" fill="none" opacity=".9">
+<path d="M150 620 L610 690 L870 540"/><path d="M150 620 L150 260 L610 330 L610 690"/>
+<path d="M150 620 L410 470 L870 540"/><path d="M150 260 L410 110 L870 180 L870 540"/><path d="M410 110 L410 470"/>
+</g>
+<g font-family="Arial,sans-serif" fill="#333" font-size="17"><text x="390" y="730">Monthly Income</text><text x="760" y="610" transform="rotate(-28 760 610)">Monthly Coffee Spend</text><text x="95" y="390" transform="rotate(-90 95 390)">Preferred Price Range</text></g>
+<g opacity=".86">
+<g fill="#ff1111"><circle cx="260" cy="570" r="7"/><circle cx="275" cy="552" r="6"/><circle cx="292" cy="566" r="7"/><circle cx="305" cy="540" r="6"/><circle cx="320" cy="555" r="7"/><circle cx="335" cy="530" r="6"/><circle cx="350" cy="548" r="7"/><circle cx="365" cy="520" r="6"/><circle cx="280" cy="585" r="6"/><circle cx="315" cy="575" r="7"/><circle cx="345" cy="570" r="6"/><circle cx="380" cy="550" r="7"/><circle cx="300" cy="525" r="6"/><circle cx="360" cy="535" r="6"/><circle cx="400" cy="565" r="7"/><circle cx="335" cy="155" r="10"/><circle cx="225" cy="315" r="10"/></g>
+<g fill="#1111ee"><circle cx="175" cy="570" r="7"/><circle cx="185" cy="548" r="6"/><circle cx="195" cy="580" r="7"/><circle cx="205" cy="535" r="6"/><circle cx="215" cy="555" r="7"/><circle cx="225" cy="530" r="6"/><circle cx="235" cy="570" r="6"/><circle cx="245" cy="545" r="7"/><circle cx="190" cy="520" r="6"/><circle cx="210" cy="505" r="6"/><circle cx="230" cy="515" r="7"/></g>
+<g fill="#078b0b"><circle cx="430" cy="575" r="7"/><circle cx="450" cy="550" r="6"/><circle cx="470" cy="590" r="7"/><circle cx="490" cy="560" r="6"/><circle cx="510" cy="575" r="7"/><circle cx="530" cy="535" r="6"/><circle cx="550" cy="555" r="7"/><circle cx="570" cy="525" r="6"/><circle cx="600" cy="545" r="7"/><circle cx="625" cy="565" r="6"/><circle cx="650" cy="535" r="7"/><circle cx="675" cy="555" r="6"/><circle cx="705" cy="520" r="7"/><circle cx="735" cy="540" r="6"/><circle cx="760" cy="500" r="7"/><circle cx="805" cy="450" r="10"/><circle cx="775" cy="320" r="10"/><circle cx="700" cy="260" r="10"/><circle cx="720" cy="470" r="9"/><circle cx="830" cy="220" r="9"/><circle cx="650" cy="390" r="9"/></g></g>
+<g fill="#fff000" stroke="#333" stroke-width="1"><circle cx="215" cy="550" r="12"/><circle cx="320" cy="555" r="12"/><circle cx="570" cy="550" r="12"/></g>
+<g font-family="Arial,sans-serif" font-size="16"><rect x="730" y="78" width="205" height="135" rx="5" fill="#f5f5f8" stroke="#ccc"/><circle cx="755" cy="105" r="9" fill="#ff1111"/><text x="775" y="111">Cluster 1</text><circle cx="755" cy="137" r="9" fill="#1111ee"/><text x="775" y="143">Cluster 2</text><circle cx="755" cy="169" r="9" fill="#078b0b"/><text x="775" y="175">Cluster 3</text><circle cx="755" cy="201" r="10" fill="#fff000"/><text x="775" y="207">Centroids</text></g>
+<text x="500" y="690" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#666">Customer clustering visualization recreated from the supplied figure</text>
+</svg>
