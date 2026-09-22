@@ -123,7 +123,7 @@ st.markdown(
 
 @st.cache_data
 def load_data():
-    survey = pd.read_csv(DATA / "indian-coffee-all-responses final dataset.csv")
+    survey = pd.read_csv(DATA / "processed" / "coffee_cleaned.csv")
     city_rank = pd.read_csv(OUT / "market_entry_ranking.csv")
     city_scores = pd.read_csv(OUT / "city_opportunity_scores.csv")
     clusters = pd.read_csv(OUT / "consumer_cluster_assignments.csv")
